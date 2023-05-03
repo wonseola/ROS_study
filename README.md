@@ -47,9 +47,10 @@ action client ,server<br>
 catkin_create_pkg topic_tutorial roscpp rospy std_msgs
 패키지 생성 
 
+roscore 
+마스터 on
 
-
-
+rosrun "패키지이름" "node이름"
 
 
 </details>

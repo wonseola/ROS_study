@@ -44,8 +44,13 @@ sevice server (응답)<br>
 action client ,server<br>
 
 
+#### catkin
+
 catkin_create_pkg topic_tutorial roscpp rospy std_msgs
 패키지 생성 
+
+(파일 생성위치)
+catkin_ws/src/"패키지"/src
 
 roscore 
 마스터 on

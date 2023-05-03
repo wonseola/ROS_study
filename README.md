@@ -45,6 +45,25 @@ action client ,server<br>
 
 <br><br>
 #### catkin
+  
+  <details>
+    <summary> catkin </summary>
+워크스페이스 <br>
+    
+   ```
+      mkdir ~/catkin_ws/src
+   ```
+    
+src 에 CMakeLists
+    
+    ```
+      cd ~/catkin_ws/src 
+      catkin_init_workspace 
+    ```
+    
+    
+  </details>
+  
 
 catkin_create_pkg topic_tutorial roscpp rospy std_msgs <br>
 패키지 생성 <br><br>

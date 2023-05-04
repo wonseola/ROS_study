@@ -73,11 +73,19 @@ src 에 CMakeLists
       catkin_create_pkg topic_tutorial roscpp rospy std_msgs 
     ```
 
-파일 생성... 위치 ! <br>
+파일 생성... 위치  <br>
     ```
-      catkin_ws/src/"패키지"/src
+      catkin_ws/src/"패키지"/src 
     ```
-    <br>
+
+      
+빌드  <br>
+    ```
+      cd ~/catkin_ws && catkin_make 
+    ```
+
+      
+
     
 <details>
   <summary>CMakeLists 수정 </summary>

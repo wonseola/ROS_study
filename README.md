@@ -8,7 +8,7 @@
 [Ubuntu 20.04.6](https://releases.ubuntu.com/focal/)
 </details>
 
-<details open>
+<details>
 <summary><h3>05.03</h3></summary>
 
 |리눅스 명령어|?|
@@ -56,28 +56,69 @@ action client ,server<br>
     
 src 에 CMakeLists
     
-    ```
+
       cd ~/catkin_ws/src 
       catkin_init_workspace 
-    ```
-    
+      catkin_make
+
+ setup.bash 를 bashrc에 추가함..(창 열릴때마다 실행되게 ~)
+      
+      gedit ~/.bashrc
+      source ~/catkin_ws/devel/setup.bash
     
   </details>
   
+패키지 생성 <br>
+    ```
+      catkin_create_pkg topic_tutorial roscpp rospy std_msgs 
+    ```
 
-catkin_create_pkg topic_tutorial roscpp rospy std_msgs <br>
-패키지 생성 <br><br>
-
-(파일 생성위치)<br>
-catkin_ws/src/"패키지"/src
-<br><br>
-roscore <br>
-마스터 on
-<br><br>
-rosrun "패키지이름" "node이름"
-<br><br>
+파일 생성... 위치 ! <br>
+    ```
+      catkin_ws/src/"패키지"/src
+    ```
+    <br>
+    
+<details>
+  <summary>CMakeLists 수정 </summary>
+  
+  ```
+    add_executable(my_publisher src/my_publisher.cpp)
+    add_executable(my_subscriber src/my_subscriber.cpp)
+    add_dependencies(my_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+    add_dependencies(my_subscriber ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+    target_link_libraries(my_publisher   ${catkin_LIBRARIES} )
+    target_link_libraries(my_subscriber   ${catkin_LIBRARIES} )
+  ```
 
 </details>
 
+<br>
+    
+    
+마스터 on<br>
+    ```
+      roscore 
+    ```
+
+실행<br>
+    ```
+      rosrun "패키지이름" "node이름"
+     ```
+     
+<br><br>
 
 
+    
+
+
+</details>
+
+<details>
+<summary><h3>05.04</h3></summary>
+
+
+
+
+
+</details>

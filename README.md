@@ -123,10 +123,15 @@ src 에 CMakeLists
 </details>
 
 <details>
-<summary><h3>05.04</h3></summary>
+<summary><h3>05.08</h3></summary>
 
+http://wiki.ros.org/msg
 
-
-
+rosnode list // 켜져있는 노드 확인 <br>
+rosnode info "노드이름" // 노드 정보  <br>
+rostopic list //토픽 확인 <br>
+rostopic info "토픽이름" // 토픽 정보 <br>
+rostopic echo "토픽이름" // sub 출력 <br>
+rostopic pub "토픽이름" // pub 출력 <br>
 
 </details>

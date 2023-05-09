@@ -135,3 +135,13 @@ rostopic echo "토픽이름" // sub 출력 <br>
 rostopic pub "토픽이름" // pub 출력 <br>
 
 </details>
+
+<details>
+<summary><h3>05.09</h3></summary>
+   <br>
+rosparam list <br>
+rosparam get "파라미터 이름" <br>
+rosparam set "파라미터 이름" "변경값" <br>
+
+  
+</details>

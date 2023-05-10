@@ -145,3 +145,13 @@ rosparam set "파라미터 이름" "변경값" <br>
 
   
 </details>
+
+
+<details>
+<summary><h3>05.10</h3></summary>
+   <br>
+
+rosrun turtlesim turtoesim_node <br>
+
+  
+</details>
